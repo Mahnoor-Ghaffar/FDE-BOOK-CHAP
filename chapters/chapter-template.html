@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Chapter Title]</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+</head>
+<body class="flex min-h-screen bg-gray-50">
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="main" class="flex-1 overflow-y-auto p-6">
+        <!-- Chapter Content -->
+        <div class="prose prose-lg max-w-none">
+            <!-- Chapter Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold">[Chapter Number]: [Chapter Title]</h1>
+                <p class="text-gray-600 mb-4">[Brief description of chapter]</p>
+            </div>
+
+            <!-- Chapter Content Goes Here -->
+            <!-- Paste your formatted content here -->
+            <!-- Use proper HTML semantics: -->
+            <!-- h2 for sections, h3 for subsections -->
+            <!-- p for paragraphs -->
+            <!-- ul/ol for lists -->
+            <!-- blockquote for quotes -->
+            <!-- pre/code for code blocks -->
+            <!-- Styled boxes for special content -->
+
+            <!-- Example of a definition box -->
+            <!-- <div class="bg-purple-50 border-purple-200 text-purple-800 p-4 mb-4 rounded-lg">
+            <!--     <h4 class="font-semibold mb-2">Definition</h4>
+            <!--     <p>[Definition text]</p>
+            <!-- </div> -->
+
+            <!-- Example of an example box -->
+            <!-- <div class="bg-gray-50 border-gray-200 text-gray-800 p-4 mb-4 rounded-lg">
+            <!--     <h4 class="font-semibold mb-2">Example</h4>
+            <!--     <p>[Example text]</p>
+            <!-- </div> -->
+
+            <!-- Quick Revision Section -->
+            <section id="quick-revision" class="mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-semibold mb-6">Quick Revision</h2>
+                <!-- Add quick revision points here -->
+            </section>
+
+            <!-- Exam Practice Section -->
+            <section id="exam-practice" class="mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-semibold mb-6">Exam Practice</h2>
+                <!-- Add exam questions here -->
+                <!-- Example question structure:
+                <div class="exam-question mb-6 p-4 bg-blue-50 rounded">
+                    <p class="question font-medium">[Question text]</p>
+                    <button class="answer-button mt-2 btn btn-outline">Show Answer</button>
+                    <div class="answer hidden mt-2 text-sm">[Answer with explanation]</div>
+                </div>
+                -->
+            </section>
+        </div>
+    </div>
+
+    <!-- Chapter Navigation -->
+    <div class="chapter-nav flex justify-between mt-10 pt-6 border-t hidden md:block">
+        <a href="#" class="nav-prev btn btn-sm btn-outline">← Previous Chapter</a>
+        <a href="#" class="nav-next btn btn-sm btn-outline">Next Chapter →</a>
+    </div>
+
+    <!-- Mobile Chapter Navigation -->
+    <div class="chapter-nav flex justify-between mt-4 pt-4 border-t block md:hidden">
+        <a href="#" class="nav-prev btn btn-sm btn-outline w-full">← Previous</a>
+        <a href="#" class="nav-next btn btn-sm btn-outline w-full">Next Chapter →</a>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

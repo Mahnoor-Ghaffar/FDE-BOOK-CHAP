@@ -1,0 +1,110 @@
+
+## 📚 AI Fluency: A Crash Course — Topics
+
+### 1. AI Fluency ka Big Picture
+
+* AI access ≠ AI fluency
+* AI Fluency kya hai?
+* Effective, Efficient, Ethical & Safe AI use
+* **4Ds Framework**
+
+  * Delegation
+  * Description
+  * Discernment
+  * Diligence
+* **Decide → Explain → Check → Own**
+
+### 2. AI ke saath kaam karne ke 3 modes
+
+* **Automation** — “Do this task”
+* **Augmentation** — “Help me think”
+* **Agency** — “Pursue this goal for me”
+* Automation vs Augmentation vs Agency
+* AI autonomy ka concept
+* Kab kaunsa mode use karna hai?
+
+### 3. Delegation — Decide who should do what
+
+* Delegation kya hai?
+* Problem Awareness
+* Platform Awareness
+* Task Delegation
+* Human vs AI responsibilities
+* Workflow design
+* AI ko kya dena hai aur kya khud karna hai?
+* Human judgment ki importance
+
+### 4. Description — Give AI what it needs
+
+Description ke **3 types**:
+
+* **Product Description** — WHAT chahiye?
+
+  * Output type
+  * Audience
+  * Format
+  * Length
+  * Tone
+  * Topics
+  * Exclusions
+
+* **Process Description** — HOW kaam karna hai?
+
+  * Steps
+  * Order
+  * Method
+  * Examples
+  * Checks
+
+* **Performance Description** — AI ko KAISE behave karna hai?
+
+  * Concise vs detailed
+  * Supportive vs challenging
+  * Exploratory vs decisive
+  * Questions poochna vs assumptions banana
+  * Uncertainty flag karna
+
+### 5. Discernment — AI ke output ko judge karna
+
+* AI confident ho sakta hai lekin wrong bhi ho sakta hai
+* AI output ki quality evaluate karna
+* Correctness vs plausibility
+* Evidence/checking
+* AI ki limitations
+* Kab AI par trust karna hai aur kab verify karna hai
+
+### 6. Diligence — Responsible AI use
+
+* AI ke output ki responsibility lena
+* **Creation**
+* **Transparency**
+* **Deployment**
+* Privacy & security
+* Responsible AI use
+* Human accountability
+
+### 7. 4Ds ko ek real project mein combine karna
+
+* Delegation → kya AI kare?
+* Description → AI ko kya information dein?
+* Discernment → result sahi hai?
+* Diligence → kya responsibly use kar rahe hain?
+* Complete AI workflow
+
+### 8. AI Fluency → Agent Factory Engineering
+
+* Personal AI skills se AI systems tak
+* AI agents ke liye 4Ds ka importance
+* Context engineering
+* Agent boundaries
+* Human escalation
+* Digital FTEs
+* System of Record
+* AI governance
+
+**Short mein chapter ka core formula:**
+
+> **Delegation = Decide**
+> **Description = Explain**
+> **Discernment = Check**
+> **Diligence = Own**

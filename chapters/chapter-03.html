@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 03: AI-Assisted Decision Making</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/main.js" defer></script>
+</head>
+<body class="flex min-h-screen bg-gray-50">
+    <div id="header"></div>
+    <div id="sidebar"></div>
+    <div id="main" class="flex-1 overflow-y-auto p-6">
+        <!-- Chapter Content -->
+        <div class="prose prose-lg max-w-none">
+            <!-- Chapter Header -->
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold">Chapter 03: AI-Assisted Decision Making</h1>
+                <p class="text-gray-600 mb-4">
+                    Using AI to enhance human decision-making while maintaining oversight
+                </p>
+            </div>
+
+            <!-- Chapter Content -->
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Delegation → kya AI kare?</h2>
+            <p>
+                The first step in AI-assisted decision making is deciding what aspects of the decision process
+                should be handled by AI versus what should remain with humans.
+            </p>
+            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                <p class="font-semibold">Key Considerations:</p>
+                <ul class="list-disc pl-5">
+                    <li>Problem definition and goal setting</li>
+                    <li>Data requirements and quality</li>
+                    <li>Ethical implications and bias considerations</li>
+                    <li>Regulatory compliance requirements</li>
+                    <li>Human expertise and judgment needs</li>
+                </ul>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Description → AI ko kya information dein?</h2>
+            <p>
+                Once the division of labor is decided, humans must provide AI with the information it needs
+                to perform its assigned tasks effectively.
+            </p>
+            <div class="space-y-3">
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Product Description</h3>
+                    <p class="text-sm">WHAT chahiye? (Output type, Audience, Format, Length, Tone, Topics, Exclusions)</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Process Description</h3>
+                    <p class="text-sm">HOW kaam karna hai? (Steps, Order, Method, Examples, Checks)</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Performance Description</h3>
+                    <p class="text-sm">AI ko KAISE behave karna hai? (Concise vs detailed, Supportive vs challenging, etc.)</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Discernment → result sahi hai?</h2>
+            <p>
+                After AI produces output, humans must evaluate its quality and trustworthiness before proceeding.
+            </p>
+            <div class="bg-red-50 p-4 rounded-lg mb-4">
+                <p class="font-semibold">Discernment Dimensions:</p>
+                <ul class="list-disc pl-5">
+                    <li><strong>Product discernment</strong>: Is the result correct, complete, consistent?</li>
+                    <li><strong>Process discernment</strong>: Is this way of working with AI actually paying off?</li>
+                    <li><strong>Performance discernment</strong>: When AI acts autonomously, is it serving people well?</li>
+                </ul>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Diligence → kya responsibly use kar rahe hain?</h2>
+            <p>
+                The final step ensures responsible AI use by examining creation, transparency, and deployment aspects.
+            </p>
+            <div class="space-y-3">
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Creation Diligence</h3>
+                    <p class="text-sm">Is it okay to put this data into this tool? (privacy, confidentiality, consent)</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Transparency Diligence</h3>
+                    <p class="text-sm">Should people know AI was involved? (disclosure requirements, stakeholder communication)</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold mb-2">Deployment Diligence</h3>
+                    <p class="text-sm">Did you verify the work before it goes out? (testing, validation, human approval)</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-semibold mb-4 mt-6">Complete AI Workflow</h2>
+            <p>
+                The 4Ds form a continuous loop for effective AI-assisted work:
+            </p>
+            <div class="text-center mb-6">
+                <div class="inline-flex space-x-3">
+                    <div class="bg-blue-50 p-3 rounded-lg w-20 h-20 flex items-center justify-center">
+                        <span class="text-blue-600 font-bold">1</span><br>
+                        <span class="text-xs text-blue-600">Delegate</span>
+                    </div>
+                    <div class="w-4 h-4 bg-blue-300 rounded-full flex items-center justify-center">
+                        <span class="text-xs text-white">→</span>
+                    </div>
+                    <div class="bg-yellow-50 p-3 rounded-lg w-20 h-20 flex items-center justify-center">
+                        <span class="text-yellow-600 font-bold">2</span><br>
+                        <span class="text-xs text-yellow-600">Describe</span>
+                    </div>
+                    <div class="w-4 h-4 bg-yellow-300 rounded-full flex items-center justify-center">
+                        <span class="text-xs text-white">→</span>
+                    </div>
+                    <div class="bg-red-50 p-3 rounded-lg w-20 h-20 flex items-center justify-center">
+                        <span class="text-red-600 font-bold">3</span><br>
+                        <span class="text-xs text-red-600">Discern</span>
+                    </div>
+                    <div class="w-4 h-4 bg-red-300 rounded-full flex items-center justify-center">
+                        <span class="text-xs text-white">→</span>
+                    </div>
+                    <div class="bg-green-50 p-3 rounded-lg w-20 h-20 flex items-center justify-center">
+                        <span class="text-green-600 font-bold">4</span><br>
+                        <span class="text-xs text-green-600">Diligence</span>
+                    </div>
+                    <div class="w-4 h-4 bg-green-300 rounded-full flex items-center justify-center">
+                        <span class="text-xs text-white">→</span>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg w-20 h-20 flex items-center justify-center">
+                        <span class="text-blue-600 font-bold">1</span><br>
+                        <span class="text-xs text-blue-600">Delegate</span>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 mt-2">Repeat as needed for continuous improvement</p>
+            </div>
+
+            <!-- Quick Revision Section -->
+            <section id="quick-revision" class="mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-semibold mb-6">Quick Revision</h2>
+                <div class="space-y-4">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">The 4Ds Workflow</h3>
+                        <p class="text-sm">Delegate → Describe → Discern → Diligence → Repeat</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">Key Questions for Each D</h3>
+                        <p class="text-sm">Delegate: What should AI do? Describe: What does AI need? Discern: Is result good? Diligence: Responsible use?</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold mb-2">Human Responsibility</h3>
+                        <p class="text-sm">Final responsibility for AI-assisted work always remains with humans</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exam Practice Section -->
+            <section id="exam-practice" class="mt-12 pt-8 border-t border-gray-200">
+                <h2 class="text-2xl font-semibold mb-6">Exam Practice</h2>
+
+                <div class="exam-question mb-6 p-4 bg-blue-50 rounded">
+                    <p class="question font-medium">What is the correct order of the 4Ds framework?</p>
+                    <button class="answer-button mt-2 btn btn-outline">Show Answer</button>
+                    <div class="answer hidden mt-2 text-sm">
+                        Delegate → Describe → Discern → Diligence
+                    </div>
+                </div>
+
+                <div class="exam-question mb-6 p-4 bg-blue-50 rounded">
+                    <p class="question font-medium">What does 'Performance Description' specify?</p>
+                    <button class="answer-button mt-2 btn btn-outline">Show Answer</button>
+                    <div class="answer hidden mt-2 text-sm">
+                        How the AI should behave (concise vs detailed, supportive vs challenging, etc.)
+                    </div>
+                </div>
+
+                <div class="exam-question mb-6 p-4 bg-blue-50 rounded">
+                    <p class="question font-medium">Who bears final responsibility for AI-assisted work?</p>
+                    <button class="answer-button mt-2 btn btn-outline">Show Answer</button>
+                    <div class="answer hidden mt-2 text-sm">
+                        Humans bear final responsibility for AI-assisted work
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Chapter Navigation -->
+    <div class="chapter-nav flex justify-between mt-10 pt-6 border-t hidden md:block">
+        <a href="chapters/chapter-02.html" class="nav-prev btn btn-sm btn-outline">← Previous Chapter</a>
+        <a href="index.html" class="nav-next btn btn-sm btn-outline">Back to Contents →</a>
+    </div>
+
+    <!-- Mobile Chapter Navigation -->
+    <div class="chapter-nav flex justify-between mt-4 pt-4 border-t block md:hidden">
+        <a href="chapters/chapter-02.html" class="nav-prev btn btn-sm btn-outline w-full">← Previous</a>
+        <a href="index.html" class="nav-next btn btn-sm btn-outline w-full">Contents →</a>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
