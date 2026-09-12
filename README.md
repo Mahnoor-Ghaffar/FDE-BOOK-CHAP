@@ -2,6 +2,16 @@
 
 A clean, minimal digital textbook website for exam preparation built with HTML, Tailwind CSS, and vanilla JavaScript.
 
+## Getting Started
+
+To run this website locally:
+
+1. Clone or download this repository
+2. Open `index.html` in your web browser (Chrome recommended)
+3. No build process or dependencies required - it's pure HTML, CSS, and JavaScript
+4. Use the sidebar to navigate between chapters
+5. Use the search box in the header to find specific content
+
 ## Project Structure
 
 ```
