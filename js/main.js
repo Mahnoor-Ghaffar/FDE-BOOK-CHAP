@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         initializeChapterNavigation();
         initializeExamToggles();
         initializeQuickRevision();
+        initializeTableOfContents();
     });
 });
 
@@ -196,6 +197,127 @@ function initializeQuickRevision() {
             revisionSection.parentNode.insertBefore(toggleBtn, revisionSection.nextSibling);
         }
     }
+}
+
+// Initialize table of contents
+function initializeTableOfContents() {
+    // Find or create TOC container
+    let tocContainer = document.getElementById('table-of-contents');
+    let tocList = document.getElementById('toc-list');
+
+    // If TOC container doesn't exist, create it
+    if (!tocContainer) {
+        tocContainer = document.createElement('nav');
+        tocContainer.id = 'table-of-contents';
+        tocContainer.className = 'mb-8 p-4 bg-white rounded-lg shadow border border-gray-200';
+        tocContainer.innerHTML = `
+            <h2 class="text-lg font-semibold mb-4">Table of Contents</h2>
+            <ul id="toc-list" class="space-y-2"></ul>
+        `;
+
+        // Insert after chapter header
+        const chapterHeader = document.querySelector('#main .mb-8');
+        if (chapterHeader) {
+            chapterHeader.insertAdjacentElement('afterend', tocContainer);
+        } else {
+            // Fallback: insert at beginning of main content
+            const mainContent = document.querySelector('#main');
+            if (mainContent) {
+                mainContent.insertBefore(tocContainer, mainContent.firstChild);
+            }
+        }
+
+        // Get the list element
+        tocList = tocContainer.querySelector('#toc-list');
+    }
+
+    // If we still don't have a list, return
+    if (!tocList) return;
+
+    // Find all h2 and h3 elements in the main content
+    const headings = document.querySelectorAll('#main h2, #main h3');
+
+    if (headings.length === 0) {
+        tocContainer.style.display = 'none';
+        return;
+    }
+
+    // Clear existing TOC items
+    tocList.innerHTML = '';
+
+    // Generate TOC items
+    headings.forEach((heading, index) => {
+        // Create a unique ID if the heading doesn't have one
+        if (!heading.id) {
+            heading.id = `toc-heading-${index}`;
+        }
+
+        // Create list item
+        const li = document.createElement('li');
+
+        // Create link
+        const link = document.createElement('a');
+        link.href = `#${heading.id}`;
+        link.textContent = heading.textContent.trim();
+
+        // Style based on heading level
+        if (heading.tagName === 'H2') {
+            link.className = 'block font-medium pl-2';
+        } else if (heading.tagName === 'H3') {
+            link.className = 'block text-sm pl-6 text-gray-600 hover:text-gray-800';
+        }
+
+        // Add smooth scrolling
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetElement = document.getElementById(heading.id);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 100, // Account for fixed header if any
+                    behavior: 'smooth'
+                });
+
+                // Update active TOC item
+                document.querySelectorAll('#toc-list a').forEach(item => {
+                    item.classList.remove('bg-blue-50', 'text-blue-600', 'font-semibold');
+                });
+                link.classList.add('bg-blue-50', 'text-blue-600', 'font-semibold');
+            }
+        });
+
+        li.appendChild(link);
+        tocList.appendChild(li);
+    });
+
+    // Show TOC container
+    tocContainer.style.display = 'block';
+
+    // Highlight current section on scroll
+    const highlightCurrentSection = () => {
+        let currentSection = null;
+
+        headings.forEach(heading => {
+            const rect = heading.getBoundingClientRect();
+            if (rect.top >= 100 && rect.top <= 200) { // Roughly in viewport
+                currentSection = heading;
+            }
+        });
+
+        if (currentSection && currentSection.id) {
+            document.querySelectorAll('#toc-list a').forEach(item => {
+                item.classList.remove('bg-blue-50', 'text-blue-600', 'font-semibold');
+                if (item.getAttribute('href') === `#${currentSection.id}`) {
+                    item.classList.add('bg-blue-50', 'text-blue-600', 'font-semibold');
+                }
+            });
+        }
+    };
+
+    // Listen for scroll events
+    window.addEventListener('scroll', highlightCurrentSection);
+
+    // Also check on load
+    setTimeout(highlightCurrentSection, 100);
 }
 
 // Utility function to create styled boxes for important content

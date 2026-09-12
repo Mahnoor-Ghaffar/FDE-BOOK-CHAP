@@ -83,6 +83,74 @@
     font-size: 0.875rem;
 }
 
+/* Table of Contents styles */
+#table-of-contents {
+    max-width: 260px;
+}
+
+#table-of-contents h2 {
+    font-size: 1.125rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+#table-of-contents ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#table-of-contents li {
+    margin: 0.25rem 0;
+}
+
+#table-of-contents a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+#table-of-contents a:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+#table-of-contents a.active,
+#table-of-contents a[aria-current="page"] {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 600;
+}
+
+/* Indent h3 items */
+#table-of-contents h3 + ul {
+    margin-top: 0.25rem;
+}
+
+#table-of-contents h3 + ul li a {
+    padding-left: 1.5rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+#table-of-contents h3 + ul li a:hover {
+    background-color: #f9fafb;
+    color: #4b5563;
+}
+
+/* Active state for JS highlighting */
+#table-of-contents a.bg-blue-50.text-blue-600.font-semibold {
+    background-color: #dbeafe;
+    color: #1e40af;
+    font-weight: 600;
+}
+
 /* Chapter navigation */
 .chapter-nav {
     font-size: 0.9rem;
